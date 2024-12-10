@@ -6,7 +6,9 @@
     },
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
-        { "src": "/(.*)", "dest": "/api/index.php" }
+        { "src": "/(.*)", "dest": "/api/index.php" },
+        { "src" : "/css/(.*)", "dest": "/public/css/"},
+        { "src": "/images/(.*)", "dest": "/public/storage/"}
     ],
     "public": true,
     "buildCommand": "vite build",
