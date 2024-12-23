@@ -5,7 +5,7 @@
 @section('content')
 <div class="container mt-5">
     <div class="mb-4">
-        <a href="{{ url()->previous() }}" class="btn btn-secondary">
+        <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary">
             Back
         </a>
     </div>
@@ -13,7 +13,7 @@
     <div class="row g-4">
         <div>
             <div class="card shadow">
-                <img src="{{ asset('storage/' . $event->image) }}" class="card-img-top" alt="{{ $event->title }}">
+                <img src="{{ asset('storage/' . $event->image) }}" class="card-img-top" width="100%" height="300px" alt="{{ $event->title }}">
                 <div class="card-body">
                     <h2 class="fw-bold text-center">{{ $event->title }}</h2>
                     <p>{{ $event->description }}</p>

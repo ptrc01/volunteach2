@@ -1,8 +1,5 @@
 @extends('layout')
 
-@push('link')
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-@endpush
 
 @section('errlogin')
     <div class="alert alert-danger">
@@ -36,17 +33,6 @@
 
                 <button type="submit" class="btn btn-primary btn-block">Sign In</button>
             </form>
-
-            {{-- <div class="text-center my-3">or</div>
-
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-outline-danger mx-2">
-                    <i class="fab fa-google"></i> Continue with Google
-                </button>
-                <button class="btn btn-outline-dark mx-2">
-                    <i class="fab fa-apple"></i> Continue with Apple
-                </button>
-            </div> --}}
 
             <p class="text-center mt-3">Don't have an account? <a href="{{ route('register') }}">Sign Up</a></p>
         </div>

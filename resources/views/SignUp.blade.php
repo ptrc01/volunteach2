@@ -1,11 +1,5 @@
 @extends('layout')
 
-@section('success')
-    <div class="alert alert-success">
-        Success Register!
-    </div>
-@endsection
-
 @section('content')
 <div class="container mt-5">
     <h2 class="text-center">Create an Account</h2>
@@ -36,7 +30,7 @@
                     @enderror
                 </div>
                 <div class="form-group mb-3">
-                    <label for="confirm-password">Confirm Password</label>
+                    <label for="password_confirmation">Confirm Password</label>
                     <input type="password" name="password_confirmation" class="form-control" id="password_confirmation" placeholder="Confirm Password" value="{{old('password_confirmation')}}">
                     @error('password_confirmation')
                         <div class="alert alert-danger">{{$message}}</div>

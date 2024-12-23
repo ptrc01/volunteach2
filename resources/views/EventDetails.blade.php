@@ -35,10 +35,9 @@
                 @else
                     <a href="{{ route('login') }}" class="btn btn-primary btn-lg flex-fill">Register Now</a>
                 @endauth
+                
+                <a href="{{ route('client.contactUs') }}" class="btn btn-outline-primary btn-lg flex-fill">Contact Organizer</a>
 
-                <button class="btn btn-outline-primary btn-lg flex-fill">
-                    Contact Organizer
-                </button>
             </div>
         </div>
     </div>

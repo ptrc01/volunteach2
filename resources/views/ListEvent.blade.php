@@ -15,15 +15,15 @@
         </div>
     </form>
         @foreach($events as $event)
-        <div class="col-md-4">
+        <div class="col-md-4 mb-5">
             <div class="card mb-4 shadow-sm w-100 h-100">
-                <img src="{{ asset('storage/' . $event->image) }}" class="card-img-top"alt="{{ $event->name }}">
-                <div class="card-body">
+                <img src="{{ asset('storage/' . $event->image) }}" class="card-img-top" height="250px" alt="{{ $event->name }}">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title">{{ $event->name }}</h5>
                     <p class="card-text">{{ Str::limit($event->description, 100) }}</p>
                     <p><strong>Date:</strong> {{ $event->date }}</p>
                     <p><strong>Location:</strong> {{ $event->location }}</p>
-                    <a href="{{ route('event.detail', $event->id) }}" class="btn btn-primary">View Detail</a>
+                    <a href="{{ route('event.detail', $event->id) }}" class="btn btn-primary mt-auto">View Detail</a>
                 </div>
             </div>
         </div>

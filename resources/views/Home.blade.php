@@ -4,7 +4,6 @@
     <main class="flex-shrink-0">
         <section class="py-5">
             <div class="container px-5">
-                <h1 class="fw-bolder fs-5 mb-4">Volunteach</h1>
                 <div class="card border-0 shadow rounded-3 overflow-hidden">
                     <div class="card-body p-0">
                         <div class="row gx-0">
@@ -16,9 +15,7 @@
                                     @auth
 
                                     @else
-                                        <button class="btn btn-primary btn-sm px-4 py-2 border-2 rounded-pill">
-                                            Sign Up
-                                        </button>
+                                        <a href="{{ route('register') }}" class="btn btn-primary btn-sm px-4 py-2 border-2 rounded-pill">Register Here</a>
                                     @endauth
 
                                 </div>
@@ -108,6 +105,34 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5" id="contact-us">
+            <div class="container px-5">
+                <div class="card border-0 shadow rounded-3 overflow-hidden">
+                    <div class="card-body p-0">
+                        <div class="row gx-0">
+                            <div class="col-lg-6 col-xl-5 py-lg-5">
+                                <div class="p-4 p-md-5 align-items-center">
+                                    <div class="h2 fw-bolder mb-4">Contact Us</div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="{{ asset('storage/images/home/phone.png') }}" width="35px" height="35px" alt="Phone Icon" class="me-3">
+                                        <span class="fs-5">+62 8210 4500 2345</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="{{ asset('storage/images/home/email.png') }}" width="35px" height="35px" alt="Email Icon" class="me-3">
+                                        <span class="fs-5">volunteach@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-7">
+                                <img src="{{ asset('storage/images/home/contactUs.jpg') }}" alt="Featured Blog Image" class="img-fluid" />
                             </div>
                         </div>
                     </div>

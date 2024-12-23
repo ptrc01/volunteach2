@@ -11,6 +11,10 @@ class ClientController extends Controller
         return view('Home');
     }
 
+    public function navigateToContactUs(){
+        return redirect()->route('Home'). '#contact-us';
+    }
+
     public function navigateToEvents(){
         return view('Events');
     }

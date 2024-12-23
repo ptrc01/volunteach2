@@ -18,7 +18,7 @@ class AuthController extends Controller
             'name'=>'required|max:25',
             'email'=>'required|email|unique:clients',
             'password'=>'required|min:10|confirmed',
-
+            'password_confirmation' => 'required|min:10'
         ]);
 
         $role = (strpos($request->email, '@admin') == true) ? 'admin' : 'client';
@@ -30,11 +30,7 @@ class AuthController extends Controller
             'role'=>$role
         ]);
 
-        if ($role == 'admin') {
-            return redirect()->route('admin.dashboard');
-        } else {
-            return redirect()->route('client.index');
-        }
+        return redirect()->route('login');
     }
 
     public function login(){
@@ -57,7 +53,7 @@ class AuthController extends Controller
             }
         }
 
-        return back()->with('errlogin', true);
+        return back();
     }
 
     public function logout(Request $request)

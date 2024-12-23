@@ -10,7 +10,7 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', [ClientController::class, 'navigateToHome'])->name('client.index');
 Route::get('/aboutUs', [ClientController::class, 'navigateToAboutUs'])->name('client.aboutUs');
-
+Route::get('/#contact-us', [ClientController::class, 'navigateToContactUs'])->name('client.contactUs');
 
 Route::get('register', [AuthController::class, 'register'])->name('register');
 Route::post('doRegis', [AuthController::class, 'doRegis'])->name('doRegis');

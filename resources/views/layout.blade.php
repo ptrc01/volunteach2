@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light pt-2 pb-2">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('client.index') }}">
-                <img src="{{ asset('storage/logo-navbar.png') }}" width="50px" alt="logo">
+                <img src="{{ asset('storage/images/layout/logo-navbar.png') }}" width="50px" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
